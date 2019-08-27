@@ -1,0 +1,155 @@
+.card {
+  position: relative;
+  text-align: center;
+}
+
+/* <--card-features--> */
+
+.card-features .card-image {
+  font-size: 16px;
+  color: #0eb493;
+  margin: 0 auto !important;
+}
+
+.card-features .card-title {
+  padding-top: 10px;
+}
+
+/* <--card-works--> */
+
+.card-works img {
+  vertical-align: middle;
+}
+
+.card-works .card-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(14, 180, 147, 0.9);
+  color: white;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card:hover .card-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.card-works .card-cover-image {
+  font-size: 20px;
+}
+
+.card-cover .card-body {
+  margin-top: 25px;
+  line-height: 1;
+}
+
+/* <--card-team--> */
+
+.card-team .card-image {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.card-team .card-body {
+  margin-bottom: 0;
+}
+
+.card-team .card-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(14, 180, 147, 0.95);
+  color: white;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.card-team.card:hover .card-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 58px;
+}
+
+.section-team .card:hover .card-title {
+  color: #0eb493;
+}
+
+/* <--card-facts--> */
+.card-facts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-facts .card-image {
+  font-size: 40px;
+  margin: 0 auto !important;
+}
+
+.card-facts .card-title {
+  margin: 20px 0;
+}
+
+.card-facts .card-description {
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .card-features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .card-features .card-image {
+    font-size: 16px;
+    color: #0eb493;
+    margin: 0 auto;
+  }
+  .card-features .card-body {
+    -ms-flex-preferred-size: 80%;
+    flex-basis: 80%;
+    font-size: 13px;
+    margin: 0 15px;
+    text-align: left;
+  }
+  .card-features .card-title {
+    padding-top: 0;
+  }
+  .card-facts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .card-facts .card-title {
+    margin: 50px 0 0;
+  }
+}
